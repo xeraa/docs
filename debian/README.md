@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `s390x` builds of [the `debian` official image](https://hub.docker.com/_/debian) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,30 +26,26 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`bullseye`, `bullseye-20210408`](https://github.com/debuerreotype/docker-debian-artifacts/blob/0590e3720f7f87992202bfcca4c13c374ff304bc/bullseye/Dockerfile)
--	[`bullseye-backports`](https://github.com/debuerreotype/docker-debian-artifacts/blob/0590e3720f7f87992202bfcca4c13c374ff304bc/bullseye/backports/Dockerfile)
--	[`bullseye-slim`, `bullseye-20210408-slim`](https://github.com/debuerreotype/docker-debian-artifacts/blob/0590e3720f7f87992202bfcca4c13c374ff304bc/bullseye/slim/Dockerfile)
--	[`buster`, `buster-20210408`, `10.9`, `10`, `latest`](https://github.com/debuerreotype/docker-debian-artifacts/blob/0590e3720f7f87992202bfcca4c13c374ff304bc/buster/Dockerfile)
--	[`buster-backports`](https://github.com/debuerreotype/docker-debian-artifacts/blob/0590e3720f7f87992202bfcca4c13c374ff304bc/buster/backports/Dockerfile)
--	[`buster-slim`, `buster-20210408-slim`, `10.9-slim`, `10-slim`](https://github.com/debuerreotype/docker-debian-artifacts/blob/0590e3720f7f87992202bfcca4c13c374ff304bc/buster/slim/Dockerfile)
--	[`experimental`, `experimental-20210408`](https://github.com/debuerreotype/docker-debian-artifacts/blob/0590e3720f7f87992202bfcca4c13c374ff304bc/experimental/Dockerfile)
--	[`oldstable`, `oldstable-20210408`](https://github.com/debuerreotype/docker-debian-artifacts/blob/0590e3720f7f87992202bfcca4c13c374ff304bc/oldstable/Dockerfile)
--	[`oldstable-backports`](https://github.com/debuerreotype/docker-debian-artifacts/blob/0590e3720f7f87992202bfcca4c13c374ff304bc/oldstable/backports/Dockerfile)
--	[`oldstable-slim`, `oldstable-20210408-slim`](https://github.com/debuerreotype/docker-debian-artifacts/blob/0590e3720f7f87992202bfcca4c13c374ff304bc/oldstable/slim/Dockerfile)
--	[`rc-buggy`, `rc-buggy-20210408`](https://github.com/debuerreotype/docker-debian-artifacts/blob/0590e3720f7f87992202bfcca4c13c374ff304bc/rc-buggy/Dockerfile)
--	[`sid`, `sid-20210408`](https://github.com/debuerreotype/docker-debian-artifacts/blob/0590e3720f7f87992202bfcca4c13c374ff304bc/sid/Dockerfile)
--	[`sid-slim`, `sid-20210408-slim`](https://github.com/debuerreotype/docker-debian-artifacts/blob/0590e3720f7f87992202bfcca4c13c374ff304bc/sid/slim/Dockerfile)
--	[`stable`, `stable-20210408`](https://github.com/debuerreotype/docker-debian-artifacts/blob/0590e3720f7f87992202bfcca4c13c374ff304bc/stable/Dockerfile)
--	[`stable-backports`](https://github.com/debuerreotype/docker-debian-artifacts/blob/0590e3720f7f87992202bfcca4c13c374ff304bc/stable/backports/Dockerfile)
--	[`stable-slim`, `stable-20210408-slim`](https://github.com/debuerreotype/docker-debian-artifacts/blob/0590e3720f7f87992202bfcca4c13c374ff304bc/stable/slim/Dockerfile)
--	[`stretch`, `stretch-20210408`, `9.13`, `9`](https://github.com/debuerreotype/docker-debian-artifacts/blob/0590e3720f7f87992202bfcca4c13c374ff304bc/stretch/Dockerfile)
--	[`stretch-backports`](https://github.com/debuerreotype/docker-debian-artifacts/blob/0590e3720f7f87992202bfcca4c13c374ff304bc/stretch/backports/Dockerfile)
--	[`stretch-slim`, `stretch-20210408-slim`, `9.13-slim`, `9-slim`](https://github.com/debuerreotype/docker-debian-artifacts/blob/0590e3720f7f87992202bfcca4c13c374ff304bc/stretch/slim/Dockerfile)
--	[`testing`, `testing-20210408`](https://github.com/debuerreotype/docker-debian-artifacts/blob/0590e3720f7f87992202bfcca4c13c374ff304bc/testing/Dockerfile)
--	[`testing-backports`](https://github.com/debuerreotype/docker-debian-artifacts/blob/0590e3720f7f87992202bfcca4c13c374ff304bc/testing/backports/Dockerfile)
--	[`testing-slim`, `testing-20210408-slim`](https://github.com/debuerreotype/docker-debian-artifacts/blob/0590e3720f7f87992202bfcca4c13c374ff304bc/testing/slim/Dockerfile)
--	[`unstable`, `unstable-20210408`](https://github.com/debuerreotype/docker-debian-artifacts/blob/0590e3720f7f87992202bfcca4c13c374ff304bc/unstable/Dockerfile)
--	[`unstable-slim`, `unstable-20210408-slim`](https://github.com/debuerreotype/docker-debian-artifacts/blob/0590e3720f7f87992202bfcca4c13c374ff304bc/unstable/slim/Dockerfile)
+-	[`bullseye`, `bullseye-20210408`](https://github.com/debuerreotype/docker-debian-artifacts/blob/5289e94dc609cd1efee8352b82fad87a1cbb91bc/bullseye/Dockerfile)
+-	[`bullseye-backports`](https://github.com/debuerreotype/docker-debian-artifacts/blob/5289e94dc609cd1efee8352b82fad87a1cbb91bc/bullseye/backports/Dockerfile)
+-	[`bullseye-slim`, `bullseye-20210408-slim`](https://github.com/debuerreotype/docker-debian-artifacts/blob/5289e94dc609cd1efee8352b82fad87a1cbb91bc/bullseye/slim/Dockerfile)
+-	[`buster`, `buster-20210408`, `10.9`, `10`, `latest`](https://github.com/debuerreotype/docker-debian-artifacts/blob/5289e94dc609cd1efee8352b82fad87a1cbb91bc/buster/Dockerfile)
+-	[`buster-backports`](https://github.com/debuerreotype/docker-debian-artifacts/blob/5289e94dc609cd1efee8352b82fad87a1cbb91bc/buster/backports/Dockerfile)
+-	[`buster-slim`, `buster-20210408-slim`, `10.9-slim`, `10-slim`](https://github.com/debuerreotype/docker-debian-artifacts/blob/5289e94dc609cd1efee8352b82fad87a1cbb91bc/buster/slim/Dockerfile)
+-	[`experimental`, `experimental-20210408`](https://github.com/debuerreotype/docker-debian-artifacts/blob/5289e94dc609cd1efee8352b82fad87a1cbb91bc/experimental/Dockerfile)
+-	[`rc-buggy`, `rc-buggy-20210408`](https://github.com/debuerreotype/docker-debian-artifacts/blob/5289e94dc609cd1efee8352b82fad87a1cbb91bc/rc-buggy/Dockerfile)
+-	[`sid`, `sid-20210408`](https://github.com/debuerreotype/docker-debian-artifacts/blob/5289e94dc609cd1efee8352b82fad87a1cbb91bc/sid/Dockerfile)
+-	[`sid-slim`, `sid-20210408-slim`](https://github.com/debuerreotype/docker-debian-artifacts/blob/5289e94dc609cd1efee8352b82fad87a1cbb91bc/sid/slim/Dockerfile)
+-	[`stable`, `stable-20210408`](https://github.com/debuerreotype/docker-debian-artifacts/blob/5289e94dc609cd1efee8352b82fad87a1cbb91bc/stable/Dockerfile)
+-	[`stable-backports`](https://github.com/debuerreotype/docker-debian-artifacts/blob/5289e94dc609cd1efee8352b82fad87a1cbb91bc/stable/backports/Dockerfile)
+-	[`stable-slim`, `stable-20210408-slim`](https://github.com/debuerreotype/docker-debian-artifacts/blob/5289e94dc609cd1efee8352b82fad87a1cbb91bc/stable/slim/Dockerfile)
+-	[`testing`, `testing-20210408`](https://github.com/debuerreotype/docker-debian-artifacts/blob/5289e94dc609cd1efee8352b82fad87a1cbb91bc/testing/Dockerfile)
+-	[`testing-backports`](https://github.com/debuerreotype/docker-debian-artifacts/blob/5289e94dc609cd1efee8352b82fad87a1cbb91bc/testing/backports/Dockerfile)
+-	[`testing-slim`, `testing-20210408-slim`](https://github.com/debuerreotype/docker-debian-artifacts/blob/5289e94dc609cd1efee8352b82fad87a1cbb91bc/testing/slim/Dockerfile)
+-	[`unstable`, `unstable-20210408`](https://github.com/debuerreotype/docker-debian-artifacts/blob/5289e94dc609cd1efee8352b82fad87a1cbb91bc/unstable/Dockerfile)
+-	[`unstable-slim`, `unstable-20210408-slim`](https://github.com/debuerreotype/docker-debian-artifacts/blob/5289e94dc609cd1efee8352b82fad87a1cbb91bc/unstable/slim/Dockerfile)
+
+[![s390x/debian build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/s390x/job/debian.svg?label=s390x/debian%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/s390x/job/debian/)
 
 # Quick reference (cont.)
 
@@ -78,9 +76,9 @@ Debian is an operating system which is composed primarily of free and open-sourc
 
 # About this image
 
-The `debian:latest` tag will always point the latest stable release (which is, at the time of this writing, `debian:buster`). Stable releases are also tagged with their version (ie, `debian:9` is an alias for `debian:stretch`, `debian:8` is an alias for `debian:jessie`, etc).
+The `s390x/debian:latest` tag will always point the latest stable release (which is, at the time of this writing, `s390x/debian:buster`). Stable releases are also tagged with their version (ie, `s390x/debian:9` is an alias for `s390x/debian:stretch`, `s390x/debian:8` is an alias for `s390x/debian:jessie`, etc).
 
-The rolling tags (`debian:stable`, `debian:testing`, etc) use the rolling suite names in their `/etc/apt/sources.list` file (ie, `deb http://deb.debian.org/debian testing main`).
+The rolling tags (`s390x/debian:stable`, `s390x/debian:testing`, etc) use the rolling suite names in their `/etc/apt/sources.list` file (ie, `deb http://deb.debian.org/debian testing main`).
 
 The mirror of choice for these images is [the deb.debian.org CDN pointer/redirector](https://deb.debian.org) so that it's as reliable as possible for the largest subset of users (and is also the default mirror for `debootstrap` as of [2016-10-20](https://anonscm.debian.org/cgit/d-i/debootstrap.git/commit/?id=9e8bc60ad1ccf3a25ce7890526b70059f3e770de)). See the [deb.debian.org homepage](https://deb.debian.org) for more information.
 
@@ -108,7 +106,7 @@ For convenience, the SHA256 checksum (and full build command) for each of the pr
 
 # Image Variants
 
-## `debian:<suite>-slim`
+## `s390x/debian:<suite>-slim`
 
 These tags are an experiment in providing a slimmer base (removing some extra files that are normally not necessary within containers, such as man pages and documentation), and are definitely subject to change.
 
