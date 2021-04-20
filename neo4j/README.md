@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `amd64` builds of [the `neo4j` official image](https://hub.docker.com/_/neo4j) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -78,8 +80,10 @@ WARNING:
 -	[`4.0.1-enterprise`](https://github.com/neo4j/docker-neo4j-publish/blob/13c288e9c36ee22e682b459fb218c9239e2c1083/4.0.1/enterprise/Dockerfile)
 -	[`4.0.0`](https://github.com/neo4j/docker-neo4j-publish/blob/685fb314ef8e451217b6806028b9ac4dbf44d3fc/4.0.0/community/Dockerfile)
 -	[`4.0.0-enterprise`](https://github.com/neo4j/docker-neo4j-publish/blob/685fb314ef8e451217b6806028b9ac4dbf44d3fc/4.0.0/enterprise/Dockerfile)
--	[`3.5.27`, `3.5`](https://github.com/neo4j/docker-neo4j-publish/blob/ce4bfeffe18865c1b94f0622015087d1d6849fbb/3.5.27/community/Dockerfile)
--	[`3.5.27-enterprise`, `3.5-enterprise`](https://github.com/neo4j/docker-neo4j-publish/blob/ce4bfeffe18865c1b94f0622015087d1d6849fbb/3.5.27/enterprise/Dockerfile)
+-	[`3.5.28`, `3.5`](https://github.com/neo4j/docker-neo4j-publish/blob/83141af227fa047421b3ea81dcb8c1f4a7c6180f/3.5.28/community/Dockerfile)
+-	[`3.5.28-enterprise`, `3.5-enterprise`](https://github.com/neo4j/docker-neo4j-publish/blob/83141af227fa047421b3ea81dcb8c1f4a7c6180f/3.5.28/enterprise/Dockerfile)
+-	[`3.5.27`](https://github.com/neo4j/docker-neo4j-publish/blob/ce4bfeffe18865c1b94f0622015087d1d6849fbb/3.5.27/community/Dockerfile)
+-	[`3.5.27-enterprise`](https://github.com/neo4j/docker-neo4j-publish/blob/ce4bfeffe18865c1b94f0622015087d1d6849fbb/3.5.27/enterprise/Dockerfile)
 -	[`3.5.26`](https://github.com/neo4j/docker-neo4j-publish/blob/b76f780318bea75347b17ef9a941bef5490d6a5b/3.5.26/community/Dockerfile)
 -	[`3.5.26-enterprise`](https://github.com/neo4j/docker-neo4j-publish/blob/b76f780318bea75347b17ef9a941bef5490d6a5b/3.5.26/enterprise/Dockerfile)
 -	[`3.5.25`](https://github.com/neo4j/docker-neo4j-publish/blob/7f640278e48b2ff205564e131cb142278c5e6f13/3.5.25/community/Dockerfile)
@@ -129,6 +133,8 @@ WARNING:
 -	[`3.4.14`](https://github.com/neo4j/docker-neo4j-publish/blob/e3ddc2d97443a058c19cd5997d8c0df48c1956a9/3.4.14/community/Dockerfile)
 -	[`3.4.14-enterprise`](https://github.com/neo4j/docker-neo4j-publish/blob/e3ddc2d97443a058c19cd5997d8c0df48c1956a9/3.4.14/enterprise/Dockerfile)
 
+[![amd64/neo4j build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/amd64/job/neo4j.svg?label=amd64/neo4j%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/amd64/job/neo4j/)
+
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
@@ -162,7 +168,7 @@ You can start a Neo4j container like this:
 docker run \
     --publish=7474:7474 --publish=7687:7687 \
     --volume=$HOME/neo4j/data:/data \
-    neo4j
+    amd64/neo4j
 ```
 
 which allows you to access neo4j through your browser at [http://localhost:7474](http://localhost:7474).
